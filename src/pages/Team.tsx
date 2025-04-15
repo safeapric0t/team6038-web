@@ -40,13 +40,14 @@ const teamData = [
   {
     title: "PR",
     members: [
-      { name: "Mina Tuana", role: "PR Captain", image: "/team_members/mina_pr.jpg" },
       { name: "Ecesu", role: "PR", image: "/team_members/ecesu_pr.jpg" },
-      { name: "Esra", role: "PR", image: "/team_members/esra_pr.jpg" },
-      { name: "Zeynep", role: "PR", image: "/team_members/zeynep_pr.jpg" },
-      { name: "Zilan", role: "PR", image: "/team_members/zilan_pr.jpg" },
+      { name: "Esra ", role: "PR", image: "/team_members/esra_pr.jpg" },
+      { name: "Kaan", role: "PR/Cameraman", image: "/team_members/kaan_pr.jpg" },
+      { name: "Mina", role: "PR Captain", image: "/team_members/mina_pr.jpg" },
       { name: "Sevde", role: "PR", image: "/team_members/sevde_pr.jpg" },
-      { name: "Kaan", role: "PR/Cameraman", image: "/team_members/kaan_pr.jpg" }
+      { name: "Zilan", role: "PR", image: "/team_members/zilan_pr.jpg" },
+      { name: "Zeynep", role: "PR", image: "/team_members/zeynep_pr.jpg" },
+      { name: "Zeynep", role: "PR/Safety Captain", image: "/team_members/zeynep_g_pr.jpg" },
     ]
   }
 ];
