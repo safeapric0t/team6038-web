@@ -8,7 +8,7 @@ const Home = () => {
       <div className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="../../mainfoto1.jpg" 
+            src="../../mainfoto.jpg" 
             alt="Robot Competition"
             className="w-full h-full object-cover"
           />
@@ -18,7 +18,7 @@ const Home = () => {
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-7xl font-extrabold text-white mb-4">
               <span className="text-blue-500">ITOBOT
-</span> 6038
+            </span> 6038
             </h1>
             <p className="mt-6 text-xl md:text-2xl text-gray-300 leading-relaxed">
             ITOBOT 6038 is a journey filled with robotic engineering and team spirit.

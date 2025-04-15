@@ -33,6 +33,7 @@ function App() {
             <Route path="/about/team" element={<AboutTeam />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/robots" element={<Robots />} />
             <Route path="/team" element={<Team />} />
             {/* Add more routes as needed */}
             {/* Other routes will be added as we create more pages */}

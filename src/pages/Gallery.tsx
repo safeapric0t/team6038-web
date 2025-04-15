@@ -1,22 +1,16 @@
 import React from 'react';
 import { Trophy, Target, Users, Brain } from 'lucide-react';
+import HeroSection from '../components/HeroSection';
 
 const Gallery = () => {
   return (
     <div className="pt-20 min-h-screen bg-white dark:bg-slate-900">
       {/* Hero Section */}
-      <div className="relative py-16 bg-gradient-to-r from-blue-600 to-blue-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
-              Gallery
-            </h1>
-            <p className="mt-3 max-w-md mx-auto text-xl text-blue-100 sm:text-2xl md:mt-5 md:max-w-3xl">
-              A collection of photos from our events and competitions
-            </p>
-          </div>
-        </div>
-      </div>
+      <HeroSection
+        title="Gallery"
+        subtitle="Explore our moments."
+        backgroundImage="/mainfoto.jpg"
+      />
 
       {/* Photo Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
