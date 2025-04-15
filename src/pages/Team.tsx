@@ -47,7 +47,7 @@ const teamData = [
       { name: "Sevde", role: "PR", image: "/team_members/sevde_pr.jpg" },
       { name: "Zilan", role: "PR", image: "/team_members/zilan_pr.jpg" },
       { name: "Zeynep", role: "PR", image: "/team_members/zeynep_pr.jpg" },
-      { name: "Zeynep", role: "PR/Safety Captain", image: "/team_members/zeynep_g_pr.jpg" },
+      { name: "Zeynep", role: "PR", image: "/team_members/zeynep_g_pr.jpg" },
     ]
   }
 ];
