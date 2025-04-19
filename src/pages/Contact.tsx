@@ -7,8 +7,8 @@ const Contact = () => {
     <div className="pt-20 min-h-screen bg-white dark:bg-slate-900">
       {/* Hero Section */}
       <HeroSection
-        title="Team Members"
-        subtitle="Our team members. We are a family."
+        title="Contact Us"
+        subtitle="We'd love to hear from you!"
         backgroundImage="/mainfoto.jpg"
       />
 

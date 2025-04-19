@@ -14,25 +14,26 @@ const teamData = [
     title: "Mentors",
     members: [
       { name: "Oğuzcan", role: "Alumni/Mentor", image: "/team_members/oguzcan_men.jpg" },
-      { name: "Yunus Emre", role: "Alumni/Mentor", image: "/team_members/cipil_men.jpg" },
-      { name: "Alp Necati", role: "Mentor", image: "/team_members/necati_men.jpg" },
+      { name: "Yunus", role: "Alumni/Mentor", image: "/team_members/cipil_men.jpg" },
       { name: "Saliha", role: "Alumni/Mentor", image: "/team_members/saliha_men.jpg" },
+      { name: "Ali", role: "Mentor", image: "/team_members/ali_men.jpg" },
+      { name: "Alp Necati", role: "Mentor", image: "/team_members/necati_men.jpg" },
       { name: "Furkan", role: "Mentor", image: "/team_members/furkan_men.jpg" }
     ]
   },
   {
     title: "Yazılım",
     members: [
-      { name: "Hamza Nurıddınov", role: "Team captain / Software", image: "/team_members/hamza.jpg" },
-      { name: "Yahya Burak Ulu", role: "Software Captain / Driver", image: "/team_members/yahya_yaz.jpg" }
+      { name: "Hamza", role: "Team captain / Software", image: "/team_members/hamza.jpg" },
+      { name: "Yahya", role: "Software Captain / Driver", image: "/team_members/yahya_yaz.jpg" }
     ]
   },
   {
     title: "Mechanic",
     members: [
-      { name: "Efe Üçel", role: "Mechanic / Technician", image: "/team_members/efe_mek.jpg" },
-      { name: "Samed Mert", role: "Mechanic / Driver", image: "/team_members/samet_mek.jpg" },
-      { name: "BurakCan", role: "Mechanic", image: "/team_members/burak_mek.jpg" },
+      { name: "Efe", role: "Mechanic / Technician", image: "/team_members/efe_mek.jpg" },
+      { name: "Samed", role: "Mechanic / Driver", image: "/team_members/samet_mek.jpg" },
+      { name: "Burak", role: "Mechanic", image: "/team_members/burak_mek.jpg" },
       { name: "Akın", role: "Mechanic", image: "/team_members/akin_mek.jpg" },
       { name: "Kayra", role: "Mechanic", image: "/team_members/kayra_mek.jpg" }
     ]
@@ -40,11 +41,11 @@ const teamData = [
   {
     title: "PR",
     members: [
+      { name: "Mina", role: "PR", image: "/team_members/mina_pr.jpg" },
       { name: "Ecesu", role: "PR", image: "/team_members/ecesu_pr.jpg" },
       { name: "Esra ", role: "PR", image: "/team_members/esra_pr.jpg" },
-      { name: "Kaan", role: "PR/Cameraman", image: "/team_members/kaan_pr.jpg" },
-      { name: "Mina", role: "PR Captain", image: "/team_members/mina_pr.jpg" },
       { name: "Sevde", role: "PR", image: "/team_members/sevde_pr.jpg" },
+      { name: "Kaan", role: "PR", image: "/team_members/kaan_pr.jpg" },
       { name: "Zilan", role: "PR", image: "/team_members/zilan_pr.jpg" },
       { name: "Zeynep", role: "PR", image: "/team_members/zeynep_pr.jpg" },
       { name: "Zeynep", role: "PR", image: "/team_members/zeynep_g_pr.jpg" },
