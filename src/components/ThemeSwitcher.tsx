@@ -12,9 +12,9 @@ const ThemeSwitcher = () => {
       aria-label="Toggle theme"
     >
       {isDark ? (
-        <Sun className="h-5 w-5 text-yellow-500" />
-      ) : (
         <Moon className="h-5 w-5 text-slate-700" />
+      ) : (
+        <Sun className="h-5 w-5 text-yellow-500" />
       )}
       <span className="sr-only">{isDark ? 'Light' : 'Dark'} theme</span>
     </button>
@@ -22,3 +22,4 @@ const ThemeSwitcher = () => {
 };
 
 export default ThemeSwitcher;
+

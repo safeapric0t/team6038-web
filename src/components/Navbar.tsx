@@ -8,7 +8,6 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isRobotsOpen, setIsRobotsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -21,10 +20,9 @@ const Navbar = () => {
   useEffect(() => {
     setIsOpen(false);
     setIsAboutOpen(false);
-    setIsRobotsOpen(false);
   }, [location]);
 
-  const NavLink = ({ to, label }) => (
+  const NavLink = ({ to, label }: { to: string; label: string }) => (
     <Link
       to={to}
       className={`block w-full px-4 py-2 text-sm font-medium transition-colors rounded-lg ${location.pathname === to
@@ -67,6 +65,7 @@ const Navbar = () => {
 
             <NavLink to="/gallery" label="Gallery" />
             <NavLink to="/team" label="Team" />
+            <NavLink to="/join-us" label="Join" />
             <Link to="/contact" className="block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm font-medium rounded-lg transition">
               Contact
             </Link>
@@ -115,6 +114,7 @@ const Navbar = () => {
         <NavLink to="/robots" label="Robots" />
         <NavLink to="/gallery" label="Gallery" />
         <NavLink to="/team" label="Team" />
+        <NavLink to="/join-us" label="Join" />
         <Link to="/contact" className="block bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 text-sm font-medium rounded-lg transition">
           Contact
         </Link>

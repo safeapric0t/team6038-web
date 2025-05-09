@@ -59,8 +59,7 @@ const NotFound = () => {
                     </p>
                     <Link
                         to="/contact"
-                        className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium"
-                    >
+                        className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
                         Contact Support →
                     </Link>
                 </div>
@@ -70,3 +69,4 @@ const NotFound = () => {
 };
 
 export default NotFound;
+//100 + 20

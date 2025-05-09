@@ -11,6 +11,7 @@ import AboutFRC from './pages/AboutFRC';
 import AboutTeam from './pages/AboutTeam';
 import { useThemeStore } from './store/themeStore';
 import NotFound from './pages/NotFound';
+import JoinUs from './pages/JoinUs';
 function App() {
   const { isDark } = useThemeStore();
 
@@ -35,6 +36,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/robots" element={<Robots />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/join-us" element={<JoinUs/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

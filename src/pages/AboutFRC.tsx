@@ -9,7 +9,7 @@ const AboutFRC = () => {
       <HeroSection
         title="About Frc"
         subtitle="What is FRC?"
-        backgroundImage="https://www.firstinspires.org/sites/default/files/image_gallery/20220423_BM_0293.jpg"
+        backgroundImage="/images/about-frc.png"
       />
 
       {/* Content Sections */}

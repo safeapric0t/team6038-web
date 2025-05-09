@@ -1,48 +1,37 @@
-// src/components/HeroSection.tsx
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 interface HeroSectionProps {
   title: string;
   subtitle: string;
-  backgroundImage: string;
+  backgroundImage?: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle, backgroundImage }) => {
-  const [offsetY, setOffsetY] = useState(0);
-
-  const handleScroll = () => setOffsetY(window.scrollY);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+const HeroSection: React.FC<HeroSectionProps> = ({
+  title,
+  subtitle,
+  backgroundImage = 'https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg'
+}) => {
   return (
-    <div className="relative h-[500px] sm:h-[600px] md:h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Parallax arka plan resmi */}
-      <img
-        src={backgroundImage}
-        alt="Background"
-        className="absolute inset-0 w-full h-full object-cover"
+    <>
+      <div
+        className="relative h-[50vh] flex items-center justify-center text-center z-1"
         style={{
-          transform: `translateY(${offsetY * 0.3}px)`,
-          transition: 'transform 0.1s ease-out'
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
-      />
-
-      {/* Siyah opaklık katmanı */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/20 backdrop-blur-[5px]" />
-
-      {/* İçerik */}
-      <div className="relative z-10 text-center px-4">
-        <h1 className="text-4xl font-bold text-white sm:text-5xl md:text-6xl">
-          {title}
-        </h1>
-        <p className="mt-3 max-w-md mx-auto text-xl text-blue-100 sm:text-2xl md:mt-5 md:max-w-3xl">
-          {subtitle}
-        </p>
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+            {title}
+          </h1>
+          <p className="text-xl md:text-2xl text-white opacity-90 max-w-xl mx-auto">
+            {subtitle}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
