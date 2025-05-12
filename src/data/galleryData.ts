@@ -25,6 +25,9 @@ export const galleryImages: GalleryImage[] = [
   { id: "16", src: "/images/vizitors.jpg", alt: "Our Visitors", category: "Visitors" },
   { id: "17", src: "/images/teamm.jpg", alt: "Team Image with Robot", category: "Team" },
   { id: "18", src: "/images/robott.jpg", alt: "Robot Image", category: "Robot" },
+  { id: "19", src: "/images/fun9.jpg", alt: "Funny Moments", category: "Fun" },
+  { id: "20", src: "/images/mach9.jpg", alt: "Mach Time", category: "Mach" },
+ // { id: "21", src: "/images/robot9.jpg", alt: "Robot Image", category: "Robot" },
 
 ];
 

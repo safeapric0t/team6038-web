@@ -4,7 +4,7 @@ import HeroSection from "../components/HeroSection";
 
 const JoinUs: React.FC = () => {
     return (
-        <div className="pt-20">
+        <div className="pt-20" >
             <HeroSection
                 title="Takımımıza Katılın!"
                 subtitle="Takımımıza katılmak için başvuru formunu doldur. Tutkunla aramıza katıl!"
@@ -26,14 +26,14 @@ const JoinUs: React.FC = () => {
                     style={{
                         width: "100%",
                         maxWidth: "800px",
-                        padding: "20px",
+                        padding: "5px",
                     }}
                 >
                     <iframe
                         src="https://docs.google.com/forms/d/e/1FAIpQLScWsl7UvbRif2k6XIg52r7seGluzOwgQPxbzdMVbWyGnKcXFA/viewform?embedded=true"
                         style={{
                             width: "100%",
-                            height: "4800px",
+                            height:"100vh",
                             border: "none",
                         }}
                         frameBorder={0}

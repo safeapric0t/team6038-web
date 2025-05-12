@@ -9,17 +9,18 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({
   title,
   subtitle,
-  backgroundImage = 'https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg'
+  backgroundImage = 'mainfoto.jpg',
 }) => {
   return (
     <>
       <div
-        className="relative h-[50vh] flex items-center justify-center text-center z-1"
+        className="relative h-[50vh] flex items-center justify-center text-center z-1 cursor-pointer"
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
+        onClick={() => window.scrollTo({ top: window.innerHeight / 2, behavior: 'smooth' })}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
