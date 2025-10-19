@@ -17,6 +17,16 @@
   <meta name="language" content="English" />
   <meta name="rating" content="General" />
   <meta name="distribution" content="Global" />
+  <script>
+  const saved = localStorage.getItem('theme-storage');
+  if (saved) {
+    const { state } = JSON.parse(saved);
+    if (state?.isDark) {
+      document.documentElement.classList.add('dark');
+      document.body.classList.add('bg-gray-900', 'text-white');
+    }
+  }
+</script>
 
     <title>ITOBOT | 6038</title>
   </head>

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { useThemeStore } from '../store/themeStore';
 
 const ThemeSwitcher = () => {
   const { isDark, toggleTheme } = useThemeStore();
+  useEffect(() => {
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+      document.body.classList.add('bg-gray-900', 'text-white');
+    } else {
+      document.documentElement.classList.remove('dark');
+      document.body.classList.remove('bg-gray-900', 'text-white');
+    }
+  }, [isDark]);
 
   return (
     <button
